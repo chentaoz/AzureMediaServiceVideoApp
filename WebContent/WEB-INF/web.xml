@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>VideoApp</display-name>
+
+  <servlet>
+  	<servlet-name>video</servlet-name>
+  	<servlet-class>com.videoapp.controller.VideoController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>video</servlet-name>
+  	<url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+ 
+   <servlet>
+  	<servlet-name>ajaxService</servlet-name>
+  	<servlet-class>com.videoapp.controller.AjaxServiceController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ajaxService</servlet-name>
+  	<url-pattern>/ajaxService</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
